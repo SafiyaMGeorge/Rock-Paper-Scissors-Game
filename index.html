@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <section id="avatar_cir"></section>
+  </header>
+  <main>
+    <section id ="user_info" class ="pop-up">
+      <form id="user_info_form">
+        <input type="text" id="user_name" name="user_name" placeholder="Alpaca123" required/> 
+        <section id="avatars">
+          <h1>Choose your avatar!</h1>
+          <section id="avatar_choice">
+            <div class="avatar_selection">
+              <label for = "avatar_1">
+                <img src="https://cdn-icons-png.flaticon.com/512/10006/10006125.png">
+              </label>
+              <input type = "radio" id="avatar_1" name="u_avatar" class="u_avatar" value = "https://cdn-icons-png.flaticon.com/512/10006/10006122.png">
+            </div>
+            <div class="avatar_selection">
+              <label for = "avatar_2">
+                <img src="https://cdn-icons-png.flaticon.com/512/8669/8669801.png">
+              </label>
+              <input type = "radio" id="avatar_2" name="u_avatar" class="u_avatar" value ="https://cdn-icons-png.flaticon.com/512/8669/8669814.png">
+            </div>
+          </section>
+        </section>
+        <button id="submit">Submit</button>
+      </form>
+      <!--The section below will recieve new info from the user via the JavaScript.-->
+      <section id="player_name"></section>
+    </section>
+    
+      <section id="btns">
+      <button class="btn" id=" Rock">Rock</button>
+      <button class="btn" id=" Paper">Paper</button>
+      <button class="btn" id=" Scissors">Scissors</button>
+        <p>Make your Move!</p>
+    </section>
+    <section id="choices">
+      <h1>User Choice:<span id="user_choice"></span><h1>
+      <h1>Computer Choice:<span id="comp_choice"></span><h1>
+    </section>
+        <div id="results_loader"></div>
+    <section id="results">
+      <div id="reaction"></div>
+      <h1>Results:<span id="result"></span><h1>
+    </section>
+    <section id="score_board">
+      <p class="scores">Your Wins:<div id="u_score">0</div></p>
+      <p class="scores">Draws:<div id="d_score">0</div></p>
+      <p class="scores">Computer Wins:<div id="ai_score">0</div></p>
+    </section>
+  </main>
+      <footer></footer>
+      <script src="./index.js"></script>
+</body>
+</html>
